@@ -305,6 +305,33 @@ if (track && fill) track.addEventListener('scroll', () => {
   fill.style.width = (12 + pct * 88) + '%';
 }, { passive: true });
 
+/* drag-to-scroll mouse utk lookbook (touch sudah native) */
+if (track && matchMedia('(hover:hover)').matches) {
+  let down = false, sx = 0, sl = 0, moved = 0;
+  track.style.cursor = 'grab';
+  track.style.scrollSnapType = 'none'; /* mouse: snap menarik balik kalau geseran < setengah slide → matikan permanen; touch tetap pakai CSS snap */
+  track.addEventListener('dragstart', e => e.preventDefault());
+  track.addEventListener('pointerdown', e => {
+    if (e.pointerType !== 'mouse') return;
+    down = true; moved = 0; sx = e.clientX; sl = track.scrollLeft;
+    track.style.cursor = 'grabbing';
+  });
+  addEventListener('pointermove', e => {
+    if (!down) return;
+    moved = Math.max(moved, Math.abs(e.clientX - sx));
+    track.scrollLeft = sl - (e.clientX - sx);
+  });
+  addEventListener('pointerup', () => {
+    if (!down) return;
+    down = false;
+    track.style.cursor = 'grab';
+  });
+  /* drag ≠ klik: cegah quickview terbuka saat geser lewat chip */
+  track.addEventListener('click', e => {
+    if (moved > 6) { e.preventDefault(); e.stopPropagation(); }
+  }, true);
+}
+
 /* ---------- favorit (localStorage) ---------- */
 const FAVS = 'snv-fav';
 let favs = [];
