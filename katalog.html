@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Katalog Lengkap — SENAVA</title>
+<meta name="description" content="Katalog lengkap SENAVA: 12 potong pakaian kasual batch kecil. Filter per kategori, cek ukuran, pesan via WhatsApp.">
+<meta name="theme-color" content="#070707">
+<meta property="og:title" content="Katalog Lengkap — SENAVA">
+<meta property="og:description" content="12 potong pakaian kasual batch kecil. Filter, pilih ukuran, pesan via WhatsApp.">
+<meta property="og:image" content="img/sekar.jpg">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/PlusJakartaSans-var.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="is-loading">
+
+<!-- preloader -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="pre-word">SENAVA</div>
+  <div class="pre-line"><span id="preFill"></span></div>
+  <div class="pre-meta">KATALOG LENGKAP — VOLUME 01</div>
+</div>
+
+<!-- hairline grid -->
+<div class="lines" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+
+<!-- header -->
+<header class="hdr" id="hdr">
+  <a class="brand" href="index.html">SENAVA<sup>®</sup></a>
+  <nav class="nav" aria-label="Utama">
+    <a href="index.html">Beranda</a>
+    <a href="katalog.html" aria-current="page">Katalog</a>
+    <a href="index.html#cerita">Cerita</a>
+  </nav>
+  <div class="hdr-act">
+    <button class="btn-cart" id="cartBtn" type="button">TAS <span id="cartCount">(0)</span></button>
+    <a class="btn-split hide-m" href="#grid"><span class="bs-l">MULAI PILIH</span><span class="bs-b" aria-hidden="true">↗</span></a>
+    <button class="burger" id="burger" type="button" aria-label="Menu"><i></i><i></i></button>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div class="menu" id="menu" aria-hidden="true">
+  <div class="menu-in">
+    <a href="index.html" class="menu-link"><em>01</em>Beranda</a>
+    <a href="katalog.html" class="menu-link"><em>02</em>Katalog</a>
+    <a href="index.html#lookbook" class="menu-link"><em>03</em>Lookbook</a>
+    <a href="index.html#cerita" class="menu-link"><em>04</em>Cerita</a>
+    <p class="menu-foot mono">TANGERANG, ID — BATCH KECIL · 09.00–21.00 WIB</p>
+  </div>
+</div>
+
+<main id="top">
+
+<!-- katalog hero -->
+<section class="k-hero">
+  <p class="eyebrow mono" data-rev>KATALOG / VOLUME 01</p>
+  <h2 class="h-sec" data-rev><span class="outline">ALL 12</span><br>PIECES.</h2>
+  <p class="k-note" data-rev>Semua potongan yang sedang kami jahit, satu halaman. Filter per kategori, cek ukuran di quick view, masukkan ke tas, lanjut ke WhatsApp.</p>
+</section>
+
+<!-- filter bar -->
+<div class="k-bar" id="kBar">
+  <button class="f-chip on" type="button" data-filter="semua">SEMUA</button>
+  <button class="f-chip" type="button" data-filter="atasan">ATASAN</button>
+  <button class="f-chip" type="button" data-filter="bawahan">BAWAHAN</button>
+  <button class="f-chip" type="button" data-filter="lapisan">LAPISAN</button>
+  <button class="f-chip" type="button" data-filter="dress">DRESS</button>
+  <button class="f-chip" type="button" data-filter="favorit">♥ FAVORIT</button>
+  <span class="f-sep" aria-hidden="true"></span>
+  <span class="f-chip k-sort-lab mono" aria-hidden="true">URUT</span>
+  <button class="f-chip on" type="button" data-sort="default">REKOMENDASI</button>
+  <button class="f-chip" type="button" data-sort="nama">NAMA A–Z</button>
+  <button class="f-chip" type="button" data-sort="murah">HARGA ↑</button>
+  <button class="f-chip" type="button" data-sort="mahal">HARGA ↓</button>
+  <button class="f-chip" type="button" data-sort="baru">BARU</button>
+  <input class="f-search mono" id="q" type="search" placeholder="CARI…" aria-label="Cari produk">
+  <span class="k-count mono" id="count">12 / 12 PIECES</span>
+</div>
+
+<!-- grid -->
+<section class="k-grid-wrap">
+  <div class="grid-p" id="grid"><!-- dirender oleh app.js --></div>
+  <noscript><p class="k-note">Katalog butuh JavaScript — buka <a href="index.html">beranda</a> untuk 6 potong utama.</p></noscript>
+</section>
+
+<!-- footer -->
+<footer class="ftr">
+  <div class="ftr-g">
+    <div class="f-col">
+      <p class="f-lab mono">01 / KOLEKSI</p>
+      <a href="katalog.html">Semua potong</a>
+      <a href="index.html#koleksi">Pilihan utama</a>
+      <a href="index.html#lookbook">Lookbook</a>
+    </div>
+    <div class="f-col">
+      <p class="f-lab mono">02 / BANTUAN</p>
+      <a href="index.html#faq">Panduan Ukuran</a>
+      <a href="index.html#faq">Perawatan</a>
+      <a href="index.html#faq">Pengiriman</a>
+      <a href="index.html#faq">Tukar Ukuran</a>
+    </div>
+    <div class="f-col f-brand">
+      <p class="f-lab mono">03 / SENAVA</p>
+      <p class="f-word outline">SENAVA</p>
+      <p class="f-tag">Pakaian kasual untuk hari yang pelan.</p>
+    </div>
+    <div class="f-col">
+      <p class="f-lab mono">04 / CATATAN</p>
+      <a href="#" rel="noopener">Instagram ↗</a>
+      <a href="#" id="waFoot" target="_blank" rel="noopener">WhatsApp ↗</a>
+      <a href="index.html#top">Beranda ↗</a>
+    </div>
+  </div>
+  <div class="f-bar mono">
+    <span>© 2026 SENAVA — PAKAIAN KASUAL UNTUK HARI YANG PELAN</span>
+    <span>MADE IN TANGERANG</span>
+  </div>
+</footer>
+
+</main>
+
+<!-- cart drawer -->
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <div class="d-head">
+    <p class="mono">TAS BELANJA <span id="dCount">(0)</span></p>
+    <button class="ico-btn" id="dClose" type="button" aria-label="Tutup"></button>
+  </div>
+  <div class="d-items" id="dItems"></div>
+  <div class="d-foot">
+    <div class="d-total"><span class="mono">TOTAL</span><strong id="dTotal">Rp 0</strong></div>
+    <div class="d-disc" id="dDisc" hidden><span class="mono">POTONGAN BUNDLE −10%</span><strong id="dDiscVal">−Rp 0</strong></div>
+    <a class="btn-solid" id="waCheckout" href="#" target="_blank" rel="noopener">PESAN VIA WHATSAPP ↗</a>
+    <p class="d-note mono">KONFIRMASI STOK & Ukuran DI WHATSAPP — BAYAR SETELAH DIPASTIKAN.</p>
+  </div>
+</aside>
+<div class="veil" id="veil"></div>
+
+<!-- quickview -->
+<div class="qv" id="qv" aria-hidden="true">
+  <div class="qv-panel" role="dialog" aria-modal="true">
+    <button class="qv-x ico-btn" id="qvClose" type="button" aria-label="Tutup"></button>
+    <div class="qv-media"><img id="qvImg" src="" alt=""></div>
+    <div class="qv-info">
+      <p class="mono qv-meta" id="qvMeta"></p>
+      <h3 id="qvName"></h3>
+      <p class="qv-price mono" id="qvPrice"></p>
+      <p class="qv-desc" id="qvDesc"></p>
+      <details class="qv-guide">
+        <summary class="mono">PANDUAN UKURAN (CM)</summary>
+        <table class="qv-table mono">
+          <thead><tr><th>CM</th><th>S</th><th>M</th><th>L</th><th>XL</th></tr></thead>
+          <tbody>
+            <tr><td>Dada</td><td>48</td><td>51</td><td>54</td><td>57</td></tr>
+            <tr><td>Panjang</td><td>70</td><td>72</td><td>74</td><td>76</td></tr>
+            <tr><td>Bahu</td><td>44</td><td>46</td><td>48</td><td>50</td></tr>
+          </tbody>
+        </table>
+        <p class="qv-g-note">Ukuran relaxed — diukur datar, toleransi ±1 cm.</p>
+      </details>
+      <p class="mono qv-lab">UKURAN</p>
+      <div class="chips" id="qvSizes"></div>
+      <button class="btn-solid" id="qvAdd" type="button">TAMBAH KE TAS</button>
+      <p class="qv-fine mono">KLIK "TAMBAH" — ukuran bisa diatur lagi di tas.</p>
+      <div class="qv-bar">
+        <p class="mono qb-price" id="qvBarPrice"></p>
+        <button class="btn-solid" id="qvBarAdd" type="button">TAMBAH — <span id="qbSize">M</span></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="vendor/lenis.min.js"></script>
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/Flip.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
